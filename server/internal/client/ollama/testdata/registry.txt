@@ -1,0 +1,20 @@
+This contains data responses for the ollama.com registry.
+
+Data may predefined data placeholders, which are globally replaced with
+a basic search and replace before this is parsed as a txtar file. The
+placeholders are define here in the comment header using lines that start with
+the name of the placeholder, which start with @, followed by the string they
+should be replaced with.
+
+The placeholders are:
+
+@123:    sha256:a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+@ABC:    sha256:b5d4045c3f466fa91fe2cc6abe79232a1a57cdf104f7a26e716e0a1e2789df78
+@123456: sha256:8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+@ABCDEF: sha256:e9c0f8b575cbfcb42ab3b78ecc87efa3b011d9a5d10b09fa4e96f240bf6a82f5
+
+-- blob.store/v2/library/test/blobs/sha256:8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 --
+ABCDEF
+
+-- example.com/v2/library/test/manifests/latest --
+{"layers": [{"digest": "sha256:8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92", size: 6}]}
